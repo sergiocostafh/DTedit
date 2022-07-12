@@ -312,8 +312,8 @@ dtedit <- function(input, output, name, thedata,
 		shiny::modalDialog(title = title.add,
 					shiny::div(shiny::textOutput(paste0(name, '_message')), style='color:red'),
 					fields,
-					footer = shiny::column(shiny::modalButton('Cancel'),
-									shiny::actionButton(paste0(name, '_insert'), 'Save'),
+					footer = shiny::column(shiny::modalButton('Cancelar'),
+									shiny::actionButton(paste0(name, '_insert'), 'Salvar'),
 									width=12),
 					size = modal.size
 		)
