@@ -437,7 +437,7 @@ dtedit <- function(input, output, name, thedata,
 			fields[[i]] <- div(paste0(i, ' = ', result$thedata[row,i]))
 		}
 		shiny::modalDialog(title = title.delete,
-					shiny::p('Are you sure you want to delete this record?'),
+					shiny::p('Deseja deletar o registro?'),
 					fields,
 					footer = shiny::column(modalButton('Cancel'),
 									shiny::actionButton(paste0(name, '_delete'), 'Delete'),
